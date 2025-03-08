@@ -51,4 +51,23 @@ Vamos a acceder a cualquiera de las URLs que antes he mencionado y veremos el pa
 ![](capturas/pleskloginpanel.png)
 
 ## Paso 4. Crear los subdominios
+No explico demasiado aquí porque es algo muy sencillo y ya viene bien explicado en el readme del profesor:
+Pero simplemente debemos darle a "Add Domain" dentro de "Websites & Domains" y en nuestro caso debemos crear Wordpress
+![](capturas/pleskwordpress.png)
+Haremos 1 dominio :([IP_AWS].nip.io)
+Y otro dominio : (wordpress.[IP_AWS].nip.io)
+![](capturas/subdominios.png)
 
+## Paso 5. Tener certificado SSL/TLS en nuestros subdominios con Let's Encrypt
+Esto es super sencillo, debemos irnos a nuestro subdominio, hacemos click en el y nos vamos a "Dashboard", bajamos un poquito y veremos en "Security" SSL/TLS Certificates
+![](capturas/letsencrypt.png)
+Hacemos click y abajo del todo veremos la opción de Instalar un certificado gratuito con Let's Encrypt, le damos a Install
+![](capturas/letsencryptinstall.png)
+Aquí ponemos un correo cualquiera y vamos a securizar con SSL/TLS únicamente nuestro nombre de dominio de esta forma:
+![](capturas/letsencryptconfig.png)
+Después le daremos a "GET for Free" y nos llegará esta alerta de que lo hemos firmado correctamente con Let's Encrypt.
+![](capturas/letsencryptinstalado.png)
+
+## Paso 6. Comprobación y verificación de Let's Encrypt activo
+![](capturas/1.png)
+![](capturas/2.png)
